@@ -7,7 +7,7 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-public class CsvFileReaderTests {
+public class CsvFileReaderTest {
 
     @Test
     public void simpleReaderHeaderTests() throws IOException {

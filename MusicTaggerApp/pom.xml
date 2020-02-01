@@ -13,10 +13,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>OpenCsvWrapper</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.mpatric</groupId>
             <artifactId>mp3agic</artifactId>
             <version>0.9.1</version>
