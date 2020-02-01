@@ -12,7 +12,7 @@ public class CsvFileReader {
     private String[] currentRecord = null;
     private Map<String, Integer> attributeIndices = new HashMap<String, Integer>();
 
-    CsvFileReader(String filepath) throws IOException {
+    public CsvFileReader(String filepath) throws IOException {
         reader = new CSVReader(new FileReader(filepath));
         String[] header = reader.readNext();
         if (header != null)
@@ -22,16 +22,20 @@ public class CsvFileReader {
         currentRecord = header;
     }
 
-    boolean readNext() throws IOException {
+    public boolean readNext() throws IOException {
         currentRecord = reader.readNext();
         return currentRecord != null;
     }
 
-    String getValue(String attrName) {
+    public String getValue(String attrName) {
         if (currentRecord != null && attributeIndices.containsKey(attrName)) {
             Integer index = attributeIndices.get(attrName);
             return currentRecord[index];
         }
         return null;
+    }
+
+    public void close() throws IOException {
+        reader.close();
     }
 }
