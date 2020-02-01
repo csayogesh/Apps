@@ -18,8 +18,8 @@ public class CsvFileWriter {
         csvWriter = new CSVWriter(new FileWriter(filepath));
         for (int i = 0; i < attributes.length; i++)
             attrIndices.put(attributes[i], i);
-        currentRecord = attributes;
-        startNewRecord();
+        csvWriter.writeNext(attributes);
+        unflushedRecords++;
     }
 
     public CsvFileWriter startNewRecord() throws IOException {
