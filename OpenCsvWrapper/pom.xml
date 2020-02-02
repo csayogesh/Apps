@@ -9,7 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!--  Package info  -->
     <artifactId>OpenCsvWrapper</artifactId>
+    <groupId>org.csvwraper</groupId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

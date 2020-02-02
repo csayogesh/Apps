@@ -17,5 +17,11 @@
             <artifactId>mp3agic</artifactId>
             <version>0.9.1</version>
         </dependency>
+        <!-- Locally developed package dependency -->
+        <dependency>
+            <groupId>org.csvwraper</groupId>
+            <artifactId>OpenCsvWrapper</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 </project>
