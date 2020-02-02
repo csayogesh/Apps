@@ -9,31 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <!--  Package info  -->
-    <artifactId>OpenCsvWrapper</artifactId>
-    <groupId>org.csvwraper</groupId>
+    <artifactId>FileUtils</artifactId>
+    <groupId>org.fileutils</groupId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>3.8</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 </project>
